@@ -4,9 +4,197 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
   </head>
+
   <body>
-    <div>ciao terst2</div>
+    <!-- * Intestazione pagina *-->
+    <header>
+      <img src="/assets/img/logo.svg" alt="Logo" />
+      <!-- Menù -->
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Articoli</li>
+          <li>Lavora con noi</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- **** Contenuto principale **** -->
+    <main>
+      <!-- * Titolo post -->
+      <div class="titolo-post">
+        <h1 class="titolo">Come creare un template per i post</h1>
+        <h4 class="titolo">di Mario Rossi - pubblicato il 25-10-2020</h4>
+      </div>
+
+      <!-- ** Contenuto post ** -->
+      <div class="contenuto-post">
+        <p>
+          La prima cosa da fare è suddividere in blocchi logici la pagina,
+          identificando le parti comuni da applicare a tutte le pagine
+        </p>
+        <br />
+
+        <!-- * Varie aree -->
+        <p>Le varie aree saranno quindi suddivise in:</p>
+        <ul>
+          <li>Contenuti di intestazione del tag &#60;header></li>
+          <li>
+            Contenuti centrali variabili del tag &#60;main> (corpo principale)
+          </li>
+          <li>
+            Contenutidi fine pagina comuni, da inserire nel tag &#60;footer>
+          </li>
+        </ul>
+
+        <!-- * Formattazione codice -->
+        <p>Formattazione del codice</p>
+        <p>
+          Il testo dell'articolo dovrà essere formattato per identificare tutte
+          le parti da selezionare con i CSS. Perciò i passi saranno:
+        </p>
+        <ol>
+          <li>
+            Progettare il markup assegnando ad ogni specifico testo il tag
+            appropriato
+          </li>
+          <li>
+            Scrivere l' HTML dai tag esterni a quelli interni e dall'altro verso
+            il basso
+          </li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+
+        <p>
+          L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere
+          la diffusione pressochè totale.
+        </p>
+        <br />
+
+        <!-- *Tabella -->
+        <table>
+          <thead>
+            <tr>
+              <caption>
+                Diffusione dei CSS
+              </caption>
+            </tr>
+            <tr>
+              <th>Anno</th>
+              <th>% di utilizzo</th>
+              <th>Supporto browser</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>2000</td>
+              <td>20%</td>
+              <td>17%</td>
+            </tr>
+
+            <tr>
+              <td>2002</td>
+              <td>35%</td>
+              <td>22%</td>
+            </tr>
+
+            <tr>
+              <td>2004</td>
+              <td>45%</td>
+              <td>42%</td>
+            </tr>
+
+            <tr>
+              <td>2008</td>
+              <td>80%</td>
+              <td>51%</td>
+            </tr>
+
+            <tr>
+              <td>2012</td>
+              <td>100%</td>
+              <td>76%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Un test di validazione potrà essere fatto tramite il tool online
+          <a href="#">-LINK ESTERNO-</a> dedicato allo scopo. Una volta
+          ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere
+          stati dei veri developers come loro:
+        </p>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MnrJzXM7a6o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- * Newsletter -->
+      <div class="newsletter">
+        <p>
+          Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+          nostra newsletter:
+        </p>
+
+        <form action="">
+          <label for="email">Inserisci la tua email</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <input type="submit" value="Iscriviti!" />
+        </form>
+      </div>
+
+      <!-- * Area correlati * -->
+      <div class="area-correlati">
+        <h4>Articoli correlati</h4>
+
+        <div class="articolo-correlato">
+          <div class="nome-articolo">Validare il codice HTML</div>
+          <div class="categoria-articolo">Categoria: develop</div>
+          <div class="data-articolo">Data: 18-9-2020</div>
+          <br />
+        </div>
+
+        <div class="articolo-correlato">
+          <div class="nome-articolo">Correggere la sintassi</div>
+          <div class="categoria-articolo">Categoria: develop</div>
+          <div class="data-articolo">Data: 16-9-2020</div>
+          <br />
+        </div>
+
+        <div class="articolo-correlato">
+          <div class="nome-articolo">Meno Kb nella pagina</div>
+          <div class="categoria-articolo">Categoria: ottimizzazione</div>
+          <div class="data-articolo">Data: 30-9-2020</div>
+          <br />
+        </div>
+      </div>
+    </main>
+
+    <!-- * Footer pagina * -->
+    <footer>
+      <div class="copyright">
+        Testat online di Mario Rossi, registrata con prot. .213/2018 - via Luigi
+        Einaudi 2 - Milano. P.IVA 00112233.
+      </div>
+
+      <div class="info">info@epicode.school <a href="#">-LINK EMAIL-</a></div>
+    </footer>
   </body>
 </html>
