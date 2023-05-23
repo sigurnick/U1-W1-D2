@@ -17,15 +17,18 @@
   <body>
     <!-- * Intestazione pagina *-->
     <header>
-      <img src="/assets/img/logo.svg" alt="Logo" />
       <!-- Menù -->
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>Articoli</li>
-          <li>Lavora con noi</li>
-        </ul>
+        <div>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articoli</a></li>
+            <li><a href="#">Lavora con noi</a></li>
+          </ul>
+        </div>
       </nav>
+
+      <div id="logo"><img src="/assets/img/logo.svg" alt="Logo" /></div>
     </header>
 
     <!-- **** Contenuto principale **** -->
@@ -33,7 +36,7 @@
       <!-- * Titolo post -->
       <div class="titolo-post">
         <h1 class="titolo">Come creare un template per i post</h1>
-        <h4 class="titolo">di Mario Rossi - pubblicato il 25-10-2020</h4>
+        <h4 class="pubblicazione">di Mario Rossi - pubblicato il 25-10-2020</h4>
       </div>
 
       <!-- ** Contenuto post ** -->
@@ -144,6 +147,7 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+        <hr />
       </div>
 
       <!-- * Newsletter -->
@@ -162,6 +166,7 @@
 
       <!-- * Area correlati * -->
       <div class="area-correlati">
+        <hr />
         <h4>Articoli correlati</h4>
 
         <div class="articolo-correlato">

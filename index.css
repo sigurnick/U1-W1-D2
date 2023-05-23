@@ -2,14 +2,70 @@ body{
     background-color: rgb(48, 48, 48);
     color: white;
     font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 main{
-    border: 5px solid;
-    border-color: black;
+   border-top: 10px solid;
+   border-bottom: 10px solid;
+   
+}
+
+header{
+    background-color: rgb(136, 135, 135);
+    padding-bottom: 40px;
+     
+}
+
+
+/* *Nav impostato in orizzontale* */
+nav ul{
+   list-style-type: none;
+}
+
+nav{
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+#menu{
+    margin: 10px;  
+    height: 50px;
+}
+
+#menu li{
+    display: block;
+    width: 350px;
+    float: left;
+    margin-left: 2px;
+    border: 1px solid;   
+}
+
+#menu a{
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color:rgb(53, 53, 54);
+}
+
+#menu a:hover {
+	background-color:rgb(50, 217, 218);
+	color:#fff;
+}
+
+#logo, nav{
+    text-align: center;  
 }
 
 .titolo{
+    color: rgb(250, 38, 81);
+    margin: 2px;
+    padding: 1px;
+}
+.pubblicazione{
     margin: 2px;
     padding: 1px;
 }
